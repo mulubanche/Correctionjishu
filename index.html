@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正姿小雷达 - 技术支持</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            background-color: #f5f7fa;
+        }
+        .support-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .app-logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            border-radius: 12px;
+            /* 移除原有背景渐变，改为图片容器 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .app-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* 保持图片比例，完整显示 */
+        }
+        h1 {
+            color: #202124;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .app-desc {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        h2 {
+            color: #202124;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            padding-left: 8px;
+            border-left: 3px solid #4A90E2;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #202124;
+            margin-bottom: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: "+";
+            margin-left: auto;
+            color: #4A90E2;
+            font-size: 18px;
+        }
+        .faq-answer {
+            color: #5f6368;
+            padding-left: 0;
+            margin-top: 5px;
+            line-height: 1.7;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #4A90E2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .version-info {
+            text-align: center;
+            color: #9aa0a6;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        a {
+            color: #4A90E2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="support-container">
+        <!-- 加载当前文件夹中的111.png作为logo -->
+        <div class="app-logo">
+            <img src="logo.png" alt="正姿小雷达logo">
+        </div>
+        <h1>姿正点 技术支持</h1>
+        <p class="app-desc">专注于姿势监测与矫正，为您的健康保驾护航</p>
+
+        <h2>常见问题</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">应用无法正常监测姿势怎么办？</div>
+            <div class="faq-answer">
+                请尝试以下解决方案：<br>
+                1. 检查是否已授予应用摄像头和传感器权限（设置 → 姿正点 → 权限）<br>
+                2. 确保光线充足，摄像头可清晰捕捉到您的上半身<br>
+                3. 重启应用或设备后重新尝试<br>
+                4. 确认应用为最新版本（前往应用商店检查更新）
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">如何调整姿势提醒的灵敏度？</div>
+            <div class="faq-answer">
+                打开应用后，点击底部「我的」→「设置」→「提醒设置」，可根据个人需求调整灵敏度滑块，共分为低、中、高三个档位。建议初次使用选择中等灵敏度，适应后再根据习惯调整。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">应用会消耗大量电量吗？</div>
+            <div class="faq-answer">
+                本应用经过优化，正常使用时不会显著增加电量消耗。若发现耗电异常，可能是由于后台持续运行导致，建议：<br>
+                1. 在不使用时关闭应用<br>
+                2. 降低监测频率（设置 → 监测设置 → 调整采样间隔）<br>
+                3. 关闭不必要的提醒方式（如震动提醒）
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">数据会保存在哪里？可以同步到其他设备吗？</div>
+            <div class="faq-answer">
+                目前所有监测数据仅存储在您的本地设备中，保障数据隐私安全。暂不支持跨设备同步功能，我们会在后续版本中考虑增加该功能，敬请期待。
+            </div>
+        </div>
+
+        <!-- <div class="faq-item">
+            <div class="faq-question">如何反馈bug或建议新功能？</div>
+            <div class="faq-answer">
+                您可以通过以下方式提交反馈：<br>
+                1. 应用内：「我的」→「帮助与反馈」→「意见反馈」<br>
+                2. 发送邮件至我们的技术支持邮箱（见下方联系方式）<br>
+                我们会在1-3个工作日内回复您的反馈
+            </div>
+        </div> -->
+
+        <h2>联系我们</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <div class="contact-icon">✉</div>
+                <div>技术支持邮箱：jiangchaodu324@163.com</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">🕒</div>
+                <div>工作时间：周一至周五 9:00-18:00（节假日除外）</div>
+            </div>
+        </div>
+
+        <h2>应用更新</h2>
+        <p>我们会定期更新应用以优化功能和修复问题，建议开启自动更新功能。最新版本信息可在应用商店查询。</p>
+
+        <p class="version-info">
+            技术支持页面最后更新：2025年7月26日<br>
+            姿正点 版权所有
+        </p>
+    </div>
+</body>
+</html>
